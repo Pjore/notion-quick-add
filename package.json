@@ -31,9 +31,11 @@
     "build-react": "react-scripts build",
     "test-react": "react-scripts test",
     "eject-react": "react-scripts eject",
-    "build-electron": "electron-builder",
-    "release": "yarn build-react && electron-builder --publish=always",
-    "build": "yarn build-react && yarn electron-build",
+    "copy-assets": "cp src/electron/index.js build/electron.js",
+    "build-electron": "yarn copy-assets && electron-builder",
+    "build": "yarn build-react && yarn build-electron",
+    "package": "yarn build && electron-builder build -mwl",
+    "package-local": "yarn build && electron-builder build",
     "start": "concurrently \"cross-env BROWSER=none yarn start-react\" \"wait-on http://localhost:3000 && electron .\""
   },
   "eslintConfig": {
