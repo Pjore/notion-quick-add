@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Notion Quick Add
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Purpose of this app is mainly to get familiar with React together with Electron. As use case I choosed to implement a quick add feature to Notion.
+
+The idea is that a small boderless, chromeless dialog should appear in the middle of the screen enable the user to enter a quick note. This note is then to be stored in Notion.
+
+In order to communicate with Notion I choose to attempt to use the official SDK: https://github.com/makenotion/notion-sdk-js
 
 ## Available Scripts
 
