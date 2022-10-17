@@ -8,7 +8,7 @@ The idea is that a small boderless, chromeless dialog should appear in the middl
 
 In order to communicate with Notion I choose to attempt to use the official SDK: https://github.com/makenotion/notion-sdk-js
 
-_______
+#########
 
 ## Available Scripts
 
